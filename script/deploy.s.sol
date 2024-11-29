@@ -1,4 +1,4 @@
-pragma solidity ^0.8.9;
+pragma solidity 0.8.28;
 
 import {Script} from "forge-std/Script.sol";
 import {EntryPoint} from "account-abstraction/core/EntryPoint.sol";
@@ -11,18 +11,18 @@ contract Deploy is Script{
 
     function run() public {
         vm.startBroadcast();
-        EntryPoint entry = new EntryPoint();
-        hero = {
-    address sender:
-    uint256 nonce:
-    bytes initCode:
-    bytes callData:
-    bytes32 accountGasLimits: 200_000,
-    uint256 preVerificationGas: 50_000,
-    bytes32 gasFees: 10 gwei,
-    bytes paymasterAndData: "0x",
-    bytes signature: "0x",
-};
+        // EntryPoint entri = new EntryPoint();
+    //     hero = {
+    //     address sender:
+    //     uint256 nonce:
+    //     bytes initCode:
+    //     bytes callData:
+    //     bytes32 accountGasLimits: 200_000,
+    //     uint256 preVerificationGas: 50_000,
+    //     bytes32 gasFees: 10 gwei,
+    //     bytes paymasterAndData: "0x",
+    //     bytes signature: "0x",
+    // };
         vm.stopBroadcast();
     }
 }
